@@ -74,7 +74,7 @@ namespace AutoClicker
         }
 
         [DllImport("user32.dll")]
-        public static extern void mouse_event(int dwFlags, int dx, int dy, int dwData, int dwExtraInfo);
+        private static extern void mouse_event(int dwFlags, int dx, int dy, int dwData, int dwExtraInfo);
 
         /// <summary>
         /// Launches the clicker
@@ -118,6 +118,7 @@ namespace AutoClicker
                 MessageBox.Show("Кликер уже работает!");
             }
         }
+
         private void start_Click(object sender, EventArgs e)
         {
             IsStartClick();
