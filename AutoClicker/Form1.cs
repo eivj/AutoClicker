@@ -37,9 +37,9 @@ namespace AutoClicker
 
             timer.Start();
 
-            RegisterHotKey(this.Handle, HOTKEY_ID_Z, 0, VK_Z);
-            RegisterHotKey(this.Handle, HOTKEY_ID_X, 0, VK_X);
-            RegisterHotKey(this.Handle, HOTKEY_ID_C, 0, VK_C);
+            RegisterHotKey(this.Handle, HOTKEY_ID_Z, 0, VK_Z); // Launches the clicker
+            RegisterHotKey(this.Handle, HOTKEY_ID_X, 0, VK_X); // Stops the clicker
+            RegisterHotKey(this.Handle, HOTKEY_ID_C, 0, VK_C); // Sets coordinates
 
             textBoxSetCoordinateX.KeyPress += textBoxSetCoordinate_KeyPress;
             textBoxSetCoordinateY.KeyPress += textBoxSetCoordinate_KeyPress;
